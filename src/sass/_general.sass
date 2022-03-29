@@ -1,0 +1,428 @@
+header
+  position: relative
+
+  nav
+    height: 53px
+    background: #212121
+    position: fixed
+    width: 100%
+    z-index: 2
+
+.hamburger
+  display: none 
+
+.menu
+  box-sizing: border-box
+  padding: 13px 70px
+  margin: 0
+  list-style: none
+  display: flex
+  justify-content: space-between
+
+  &_link
+    font-weight: 300
+    font-size: 15px
+    line-height: 15px
+    color: #FFFFFF
+    text-decoration: none
+
+  &_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+      border-right: none
+
+.subheader
+  position: absolute
+  top: 53px
+  width: 100%
+  height: 87px
+  background-color: rgba(0, 0, 0, 0.6)
+  opacity: 0.6
+
+  &_logo
+    max-width: 100%
+    margin-top: 17px
+    display: block
+
+  &_official
+    font-weight: 300
+    font-size: 13px
+    color: #FFFFFF
+    margin-top: 6px
+
+  &_call
+    font-weight: 300
+    font-size: 12px
+    text-align: right
+    color: #FFFFFF
+    margin-top: 24px
+
+  &_phone
+    font-weight: 400
+    font-size: 22px
+    text-align: right
+    text-transform: uppercase
+    color: #FFFFFF
+    text-decoration: none
+    display: block
+    margin-top: 7px
+    line-height: 12px
+
+  &_btn
+    margin-top: 21px
+    width: 100%
+    height: 46px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
+    font-weight: 400
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+    
+
+.promo
+  min-height: 800px
+  background: url('../img/bg/uber_bg.jpg') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  &_header
+    font-weight: 700
+    font-size: 60px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 60px
+    margin: 0
+
+  &_subheader
+    font-weight: 700
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+
+  &_desc
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+    margin-top: 23px
+
+  &_btn
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
+    margin: 0 auto
+    display: block
+    margin-top: 115px
+    font-weight: 400
+    font-size: 18px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center;
+  &_white
+    background-color: #fff;
+    color: #070716;
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  &_white
+    color: #fff;
+
+.subtitle
+  margin-top: 19px
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  &_white
+    color: #fff;
+
+.reasons
+  padding: 71px 0 65px 0
+
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+  &_descr
+    width: 343px
+
+  &_subtitle
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
+
+  &_text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url("../img/bg/mobile_bg.jpeg") center center/cover no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    margin: 0 auto;
+    margin-bottom: 19px
+    padding-top: 82px;
+    position: relative
+    &_1
+      background: url('../img/card_bg/Карточка 1.jpg') center (center/cover) no-repeat
+    &_2
+      background: url('../img/card_bg/Карточка 2.jpg') center (center/cover) no-repeat
+    &_3
+      background: url('../img/card_bg/Карточка 3.jpg') center (center/cover) no-repeat
+    &_4
+      background: url('../img/card_bg/Карточка 4.jpg') center (center/cover) no-repeat
+    &_5
+      background: url('../img/card_bg/Карточка 5.jpg') center (center/cover) no-repeat
+    &_6
+      background: url('../img/card_bg/Карточка 6.jpg') center (center/cover) no-repeat
+    &_subtitle
+      font-weight: 400
+      font-size: 24px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_plus
+      position: relative
+      width: 29px
+      height: 29px
+      border-radius: 100%
+      background: #000000
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 34px
+      margin: 0 auto
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+      &:before
+        content: ""
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main-color
+        transition: .5s all
+      &:after
+        content: ""
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $main-color
+        transition: .5s all
+        position: absolute
+      &:hover
+        &:before, &:after
+          transition: 0.5s all
+          background-color: $second-color
+
+.choice 
+  min-height: 895px
+  position: relative
+  padding: 57px 0 137px 0
+  background: url("../img/bg/mobile_bg.jpeg") center center/cover no-repeat
+  .black
+    width: 100%
+    left: 0;
+    top: 0;
+    height: 502px
+    position: absolute
+    z-index: -1
+    background-color: #000
+  &_img
+    position: relative
+    display: block
+    margin: 0 auto
+    margin-top: 54px
+  &_descr
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    font-weight: 400
+    font-size: 22px
+    color: #1CA8C3
+  &_list
+    list-style: none
+    padding-left: 50px
+    margin-top: 22px
+  li
+    position: relative
+    display: block
+    font-weight: 300
+    font-size: 17px
+    color: #222222
+    margin-bottom: 10px
+    &:before
+      content: ""
+      display: inline-block
+      vertical-align: middle
+      position: absolute
+      left: -32px
+      top: 3px
+      width: 21px
+      height: 20px
+      background: url(../icons/list_icon.png) center (center/cover) no-repeat 
+  .warning
+    .require_title
+      color: $second-color
+    li
+      &::before
+        background: url(../icons/list_icon_red.png) center (center/cover) no-repeat
+
+.cities
+  min-height: 720px
+  background-color: #080816
+  padding: 46px 0 50px 0
+  background: url(../img/bg/Vector.jpg) center (center/cover) no-repeat
+  position: relative
+  &_link
+    font-weight: 400
+    font-size: 15px
+    text-transform: uppercase
+    color: #1FBAD6
+    text-decoration: none
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 50px
+    &:hover
+      text-decoration: none
+      color: $main-color
+
+.footer
+  min-height: 156px
+  background-color: #fff
+  padding: 12px 33px 40px 23px
+  &_divider
+    width: 300px
+    height: 5px
+    margin: 0 auto
+    background-color: #1FBAD6
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: start
+    margin-top: 31px
+  &_wrapper > div
+      width: 33%
+      display: flex
+      &:nth-child(3)
+        justify-content: flex-end
+  &_social
+    width: 100%
+    display: flex
+    justify-content: center
+    a
+      width: 35px
+      height: 35px
+      background-color: #070716
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 6px
+      text-decoration: none
+      color: #fff
+  &_links
+    width: 390px
+    &_main
+      display: flex
+      justify-content: space-around
+      a
+        text-transform: uppercase
+        text-decoration: none
+        font-weight: 300
+        font-size: 15px
+        color: #070716
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 15px
+      a
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+        text-decoration: none
+    &_language
+      font-weight: 400
+      font-size: 11px
+      text-align: center
+      text-transform: uppercase
+      color: #1FBAD6
+      text-decoration: none
+      display: block
+      margin: 0 auto
+      margin-top: 18px
+  &_mobile
+    width: 100%
+    display: flex
+    justify-content: center
+
+.xs-visible
+  display: none
